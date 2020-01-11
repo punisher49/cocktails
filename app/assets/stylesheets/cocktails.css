@@ -1,0 +1,14 @@
+body{
+  background-color: black;
+  color: orange;
+}
+a {
+  color: #00FFFF;
+}
+
+.text_optional {
+  width: 80%;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box; 
+}
