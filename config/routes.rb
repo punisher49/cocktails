@@ -6,8 +6,9 @@ post '/login' => 'session#create'     # This will be the path to which the sign-
 delete '/login' => 'session#destroy'  # This will be the path users use to log-out.
 
 resources :users
-resources :cocktails
+resources :cocktails do
+  resources :comments
+end
+
 delete 'cocktails/:id', to: "cocktails#delete", as: :delete_cocktail
-
-
 end

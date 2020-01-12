@@ -24,3 +24,7 @@ Name: <%= @cocktail.name %>
  <p>
  Instructions: <%= @cocktail.instructions %>
  </p>
+<h2><%= @cocktail.comments.count %> Comments </h2>
+  <%= render @cocktail.comments %>
+  <h3>Add a Comments: </h3>
+  <%= render "comments/form" %>
