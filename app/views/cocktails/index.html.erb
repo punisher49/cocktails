@@ -3,22 +3,12 @@
 
 <% @cocktail.each do |cocktail| %>
   <p>
-  <%= cocktail.id %>)Name: <%= cocktail.name %>
+  <%= cocktail.name %>
   </p>
 
   <%= image_tag cocktail.image, alt: @cocktail.name, class: 'cocktail' %>
+<br>
 
-   <p>
-   Creator: <%= cocktail.creator %>
-   </p>
-
-   <p>
-   Ingredients: <%= cocktail.ingredients %>
-   </p>
-
-   <p>
-   Instructions: <%= cocktail.instructions %>
-   </p>
 
    <%= link_to "Show", cocktail %>
    <%= link_to "Edit", edit_cocktail_path(cocktail) %>
