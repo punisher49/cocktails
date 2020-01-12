@@ -1,18 +1,94 @@
-body{
-  background-color: black;
-  color: orange;
-}
-a {
-  color: #00FFFF;
-}
+/*
 
 .text_optional {
   width: 80%;
   padding: 15px 22px;
   margin: 10px 5px;
   box-sizing: border-box;
-}
+} */
 .cocktail {
   width:250px;
   height: 300px;
+}
+.login {
+position:absolute;
+top:35px;
+right:90px;
+}
+
+
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{
+  background-color: black;
+  color: orange;
+  margin: 30px;
+}
+
+p
+{ padding: 0px 40px 0px 40x;
+
+  line-height: 1.7em;
+  text-align: auto}
+
+
+
+
+#main, #logo, #menubar, #site_content, #footer, #content
+{ margin-left: auto;
+  margin-right: auto;}
+
+
+
+
+
+
+
+#menubar
+{ width: 910px;
+  height: 30px;
+  padding: 0;
+  background-color: orange;
+  border: 1px solid black;
+  border-radius: 35px;}
+
+
+  #footer
+  { width: 910px;
+    height: auto;
+    text-align: center;
+    background-color: orange;
+    color: black;
+
+    letter-spacing: 0.1em;
+    border: 1px solid black;
+    border-radius: 35px;
+    font-size: 1em;
+
+  }
+
+
+#content
+{ text-align: auto;
+  width: 890px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding: 0px 10px 0px 10px;
+  margin-left: 250px;
+
+}
+img{
+  border: 1px solid black;
+  border-radius: 35px;
+
+}
+
+a {
+  color: #7FDBFF;
+  text-decoration: none;
 }

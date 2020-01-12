@@ -1,41 +1,58 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Cocktails</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-  </head>
+<head>
 
-  <body>
+  <title>Cocktails</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <!-- <h1>Cocktails</h1> -->
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
 
-    <header>
-      <nav>
-        <% if @current_user.present? %>
-          Welcome, <%= @current_user.name %>
-          <% if @current_user.admin %>
-          (admin)
-          <% end %>
-          |
-          <%= link_to 'Logout', login_path, method: 'delete' %>
-        <% else %>
-          <%= link_to 'Login', login_path %>
-          |
-          <%= link_to 'Sign Up', new_user_path %>
+
+
+<body>
+  <div id="main">
+    <div id="header">
+        <div id="logo_text">
+ </div>
+
+      <div id="menubar">
+
+
+
+      </div>
+
+
+
+      <div class="login">
+      <% if @current_user.present? %>
+        Welcome, <%= @current_user.name %>
+        <% if @current_user.admin %>
+        (admin)
         <% end %>
-      </nav>
-      <hr>
-    </header>
+        |
+        <%= link_to 'Logout', login_path, method: 'delete' %>
+      <% else %>
+        <%= link_to 'Login', login_path %>
+        |
+        <%= link_to 'Sign Up', new_user_path %>
+      <% end %>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="content">
+               <%= yield %>
 
+    </div>
+    </div>
 
-    <%= yield %>
-    <footer>
-      <hr>
-      &copy; Best Cocktails 2020
+          <footer>
+    <div id="footer">
+            Copyright &copy; Hasan Aliyev 2020</a>
+    </div>
     </footer>
-  </body>
+</body>
 </html>
