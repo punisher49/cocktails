@@ -7,9 +7,10 @@
 Name: <%= @cocktail.name %>
 </p>
 
- <p>
- <%= @cocktail.image %>
- </p>
+<% if @cocktail.image.present?  %>
+<%= image_tag @cocktail.image, alt: @cocktail.name, class: 'cocktail' %>
+<% end  %>
+
 
  <p>
  Creator: <%= @cocktail.creator %>

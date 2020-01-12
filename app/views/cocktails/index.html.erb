@@ -6,9 +6,7 @@
   <%= cocktail.id %>)Name: <%= cocktail.name %>
   </p>
 
-   <p>
-   <%= cocktail.image %>
-   </p>
+  <%= image_tag cocktail.image, alt: @cocktail.name, class: 'cocktail' %>
 
    <p>
    Creator: <%= cocktail.creator %>

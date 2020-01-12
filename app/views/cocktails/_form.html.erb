@@ -1,11 +1,21 @@
 <%= simple_form_for(@cocktail) do |f|%>
 
-<%= f.input :name %>
-<%= f.input :image %>
-<%= f.input :creator %>
-<%= f.input :ingredients %>
-<%= f.input :instructions %>
 
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :image, 'Image URL' %>
+<%= f.text_field :image %>
+<br>
+<%= f.label :creator  %>
+<%= f.text_field :creator %>
+<br>
+<%= f.label :ingredients %>
+<%= f.text_field :ingredients %>
+<br>
+<%= f.label :instructions %>
+<%= f.text_field :instructions %>
+
+<br>
 <%= f.submit %>
-
 <% end %>
