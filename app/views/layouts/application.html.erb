@@ -13,39 +13,46 @@
   <div id="main">
     <div id="header">
 
-
+<!--
     <div id="logo_text">
-    </div>
+    </div> -->
 
 
 
     <div id="menubar">
 
+       <ul id="menu">
 
-             <%= link_to "Cocktails", cocktails_path %>
 
-             <div class="login">
-              <% if @current_user.present? %>
-              Welcome, <%= @current_user.name %>
-              <% if @current_user.admin %>
-              (admin)
-              <% end %>
-              |
-              <%= link_to 'Logout', login_path, method: 'delete' %>
-              <% else %>
-              <%= link_to 'Login', login_path %>
-              |
-              <%= link_to 'Sign Up', new_user_path %>
-              <% end %>
-              </div>
+           <li><%= link_to "Cocktails", cocktails_path %></li>
+
+           <li><div class="login">
+            <% if @current_user.present? %>
+            Welcome, <%= @current_user.name %>
+            <% if @current_user.admin %>
+            (admin)
+            <% end %>
+            </li>
+            |
+            <li><%= link_to 'Logout', login_path, method: 'delete' %></li>
+            <% else %>
+            <li><%= link_to 'Login', login_path %></li>
+            |
+            <li><%= link_to 'Sign Up', new_user_path %></li>
+            <% end %>
+
+
+        </div>
+
+        </div>
       </div>
       </div>
       <div id="site_content">
-      <div id="content">
+        <div id="content">
                <%= yield %>
 
+        </div>
       </div>
-    </div>
 
     <footer>
          <div id="footer">

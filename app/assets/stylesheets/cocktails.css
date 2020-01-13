@@ -9,8 +9,8 @@ box-sizing: border-box;
 
 
 .cocktail {
-width:250px;
-height: 300px;
+width:170px;
+height: 200px;
 }
 
 
@@ -23,6 +23,9 @@ body {
   background-color: black;
   color: orange;
   margin: 30px;
+  margin-bottom:50px;
+
+
 }
 
 p {
@@ -36,41 +39,44 @@ p {
   margin-right: auto;
 }
 
-
-#menubar {
-  width: 910px;
-  height: 30px;
-  padding: 3px;
-  background-color: black;
-  border: 3px solid orange;
-  border-radius: 35px;
-  color:black;
-}
 .login {
-  padding-left: 770px;
+
   color: orange;
 }
 
 
-#footer { width: 910px;
-  height: auto;
+#footer {
+  width: 910px;
   text-align: center;
-  background-color: orange;
-  color: black;
+  color: orange;
   letter-spacing: 0.1em;
-  border: 1px solid black;
   border-radius: 35px;
   font-size: 1em;
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  height: 50px;
+  padding: 3px;
+  background-color: black;
+  border: 1px ridge orange;
+  border-radius: 35px;
+  /* box-shadow: 0px 0 100px 10px orange; */
+
 
 }
 #content {
   text-align: auto;
   width: 890px;
   background-color: black;
-  border: 1px solid black;
+
   border-radius: 35px;
-  padding: 0px 10px 0px 10px;
+  padding: 5px;
   margin-left: 230px;
+  margin-top: 70px;
+  margin-bottom: 90px;
 }
 img {
   border: 1px solid black;
@@ -135,3 +141,58 @@ a {
   color: white;
   border-radius: 35px;
 }
+
+#menubar {
+  width: 910px;
+  padding: 3px;
+  background-color: black;
+  border: 1px ridge orange;
+  border-radius: 35px;
+  color:black;
+  /* box-shadow: 0px 0 100px 10px orange; */
+
+  position: fixed;
+  height: 50px;
+  left: 0px;
+  right: 0px;
+  top: 0;
+
+}
+ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+{ color: black;
+    border-radius: 35px;
+  background: orange;}
+
+
+  ul#menu, ul#menu li
+  { float: left;
+    margin: 0;
+    padding: 0;}
+
+  ul#menu li
+  { list-style: none;}
+
+  ul#menu li a
+  {
+    font: normal 100% arial, sans-serif;
+    display: block;
+    float: left;
+    height: 37px;
+    padding: 5px;
+    text-align: center;
+    color: orange;
+    text-decoration: none;
+    background: transparent;}
+
+    ul
+    { margin: 2px 0 22px 17px;}
+
+    ul li
+    { list-style-type: circle;
+      margin: 0 0 6px 0;
+      padding: 0 0 4px 5px;}
+
+      a, a:hover
+      { outline: none;
+        text-decoration: none;
+        color: #FD5BFF;}
