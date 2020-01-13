@@ -1,59 +1,60 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
-
   <title>Cocktails</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-
-
-
 <body>
   <div id="main">
     <div id="header">
-        <div id="logo_text">
- </div>
-
-      <div id="menubar">
 
 
-
-      </div>
-
-
-
-      <div class="login">
-      <% if @current_user.present? %>
-        Welcome, <%= @current_user.name %>
-        <% if @current_user.admin %>
-        (admin)
-        <% end %>
-        |
-        <%= link_to 'Logout', login_path, method: 'delete' %>
-      <% else %>
-        <%= link_to 'Login', login_path %>
-        |
-        <%= link_to 'Sign Up', new_user_path %>
-      <% end %>
-      </div>
+    <div id="logo_text">
     </div>
-    <div id="site_content">
+
+
+
+    <div id="menubar">
+
+
+             <%= link_to "Cocktails", cocktails_path %>
+
+             <div class="login">
+              <% if @current_user.present? %>
+              Welcome, <%= @current_user.name %>
+              <% if @current_user.admin %>
+              (admin)
+              <% end %>
+              |
+              <%= link_to 'Logout', login_path, method: 'delete' %>
+              <% else %>
+              <%= link_to 'Login', login_path %>
+              |
+              <%= link_to 'Sign Up', new_user_path %>
+              <% end %>
+              </div>
+      </div>
+      </div>
+      <div id="site_content">
       <div id="content">
                <%= yield %>
 
-    </div>
+      </div>
     </div>
 
-          <footer>
-    <div id="footer">
-            Copyright &copy; Hasan Aliyev 2020</a>
-            <a href="https://twitter.com/createcocktails?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" height="30px">Follow @createcocktails</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+    <footer>
+         <div id="footer">
+            Copyright &copy; Hasan Aliyev 2020
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+         </div>
     </footer>
 </body>
 </html>

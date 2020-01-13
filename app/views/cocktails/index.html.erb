@@ -2,15 +2,19 @@
 <%= link_to "Create a new Cocktail", new_cocktail_path %>
 
 <% @cocktail.each do |cocktail| %>
-  <p>
-  <%= cocktail.name %>
-  </p>
+    <p>
+     <%= link_to cocktail.name, cocktail %> (Added by <%= cocktail.user.name %>)
+    </p>
+    <%= image_tag cocktail.image, alt: @cocktail.name, class: 'cocktail' %>
+    <br>
 
-  <%= image_tag cocktail.image, alt: @cocktail.name, class: 'cocktail' %>
-<br>
+
+    <%= link_to "Edit", edit_cocktail_path(cocktail)%>
 
 
-   <%= link_to "Show", cocktail %>
-   <%= link_to "Edit", edit_cocktail_path(cocktail) %>
-   <%= link_to "Delete", delete_cocktail_path(cocktail), method: :delete, data: {confirm: "Are you sure?"} %>
+
+     <%= link_to "Delete", delete_cocktail_path(cocktail), method: :delete, data: {confirm: "Are you sure?"} %>
+
+
+
 <% end %>

@@ -1,12 +1,10 @@
 class CommentsController < ApplicationController
 
-  def create
+def create
     @cocktail = Cocktail.find(params[:cocktail_id])
     @comment = @cocktail.comments.create(params[:comment].permit(:name, :body))
     redirect_to cocktail_path(@cocktail)
-  end
-
-
+end
 
 def destroy
   @cocktail = Cocktail.find(params[:cocktail_id])

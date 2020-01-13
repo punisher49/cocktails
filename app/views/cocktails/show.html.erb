@@ -1,30 +1,44 @@
 <%= link_to "All Cocktails", cocktails_path %>
 
 <h1>Cocktail</h1>
-
-
 <p>
 Name: <%= @cocktail.name %>
 </p>
-
-<% if @cocktail.image.present?  %>
-<%= image_tag @cocktail.image, alt: @cocktail.name, class: 'cocktail' %>
-<% end  %>
+      <% if @cocktail.image.present?  %>
+      <%= image_tag @cocktail.image, alt: @cocktail.name, class: 'cocktail' %>
+      <% end  %>
 
 <br>
- <p>
- Creator: <%= @cocktail.creator %>
+<div class="inside">
+  <p>
+      Creator: <%= @cocktail.creator %>
  </p>
-<br>
- <p>
- Ingredients: <%= @cocktail.ingredients %>
- </p>
- <br>
 
- <p>
- Instructions: <%= @cocktail.instructions %>
- </p>
+</div>
+
+
+<div class="inside">
+<p>
+Ingredients: <%= @cocktail.ingredients %>
+</p>
+</div>
+
+
+
+<div class="inside">
+<p>
+Instructions: <%= @cocktail.instructions %>
+</p>
+</div>
+
+
+<div class="inside">
 <h2><%= @cocktail.comments.count %> Comments </h2>
-  <%= render @cocktail.comments %>
-  <h3>Add a Comments: </h3>
-  <%= render "comments/form" %>
+</div>
+<div class="inside">
+<%= render @cocktail.comments %>
+</div>
+<div class="inside">
+<h3>Add Comments: </h3>
+<%= render "comments/form" %>
+</div>

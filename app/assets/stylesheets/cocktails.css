@@ -1,94 +1,137 @@
-/*
+
 
 .text_optional {
-  width: 80%;
-  padding: 15px 22px;
-  margin: 10px 5px;
-  box-sizing: border-box;
-} */
+width: 80%;
+padding: 15px 22px;
+margin: 10px 5px;
+box-sizing: border-box;
+}
+
+
 .cocktail {
-  width:250px;
-  height: 300px;
-}
-.login {
-position:absolute;
-top:35px;
-right:90px;
+width:250px;
+height: 300px;
 }
 
 
+* {
+ margin: 0;
+ padding: 0;
+}
 
-*
-{ margin: 0;
-  padding: 0;}
-
-body
-{
+body {
   background-color: black;
   color: orange;
   margin: 30px;
 }
 
-p
-{ padding: 0px 40px 0px 40x;
-
+p {
+  padding: 0px 40px 0px 40x;
   line-height: 1.7em;
-  text-align: auto}
+  text-align: auto
+}
+
+#main, #logo, #menubar, #site_content, #footer, #content {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
-
-
-#main, #logo, #menubar, #site_content, #footer, #content
-{ margin-left: auto;
-  margin-right: auto;}
-
-
-
-
-
-
-
-#menubar
-{ width: 910px;
+#menubar {
+  width: 910px;
   height: 30px;
-  padding: 0;
+  padding: 3px;
+  background-color: black;
+  border: 3px solid orange;
+  border-radius: 35px;
+  color:black;
+}
+.login {
+  padding-left: 770px;
+  color: orange;
+}
+
+
+#footer { width: 910px;
+  height: auto;
+  text-align: center;
   background-color: orange;
+  color: black;
+  letter-spacing: 0.1em;
   border: 1px solid black;
-  border-radius: 35px;}
+  border-radius: 35px;
+  font-size: 1em;
 
-
-  #footer
-  { width: 910px;
-    height: auto;
-    text-align: center;
-    background-color: orange;
-    color: black;
-
-    letter-spacing: 0.1em;
-    border: 1px solid black;
-    border-radius: 35px;
-    font-size: 1em;
-
-  }
-
-
-#content
-{ text-align: auto;
+}
+#content {
+  text-align: auto;
   width: 890px;
   background-color: black;
   border: 1px solid black;
   border-radius: 35px;
   padding: 0px 10px 0px 10px;
-  margin-left: 250px;
-
+  margin-left: 230px;
 }
-img{
+img {
   border: 1px solid black;
   border-radius: 35px;
-
 }
-
 a {
   color: #7FDBFF;
   text-decoration: none;
+}
+.inside{
+  border: 1px solid orange;
+  border-radius: 35px;
+  margin: 5px;
+  padding: 5px;
+
+}
+.inside_of_comments {
+  border: 1px solid black;
+  border-radius: 35px;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 35px;
+
+}
+.fa {
+  padding: 5px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  border-radius: 35px;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  border-radius: 35px;
+}
+
+.fa-instagram {
+  background: purple;
+  color: white;
+  border-radius: 35px;
 }

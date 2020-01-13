@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
 
 
-get '/login' => 'session#new'         # This will be our sign-in page.
-post '/login' => 'session#create'     # This will be the path to which the sign-in form is posted
-delete '/login' => 'session#destroy'  # This will be the path users use to log-out.
+get '/login' => 'session#new'
+post '/login' => 'session#create'
+delete '/login' => 'session#destroy'
 
 resources :users
 resources :cocktails do
-  resources :comments
+resources :comments
 end
 
 delete 'cocktails/:id', to: "cocktails#delete", as: :delete_cocktail
