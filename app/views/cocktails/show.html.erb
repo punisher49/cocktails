@@ -1,44 +1,48 @@
 <%= link_to "All Cocktails", cocktails_path %>
 
-<h1>Cocktail</h1>
-<p>
-Name: <%= @cocktail.name %>
-</p>
-      <% if @cocktail.image.present?  %>
-      <%= image_tag @cocktail.image, alt: @cocktail.name, class: 'cocktail' %>
-      <% end  %>
 
-<br>
-<div class="inside">
-  <p>
-      Creator: <%= @cocktail.creator %>
- </p>
 
+<div class="flex-container">
+  <div>
+        <p>
+             <%= @cocktail.name %>
+        </p>
+
+
+        <div>
+        <% if @cocktail.image.present?  %>
+        <%= image_tag @cocktail.image, alt: @cocktail.name, class: 'cocktail' %>
+        <% end  %>
+        </div>
+  </div>
+  <br>
+
+       <div id="push_down">
+         <ul>
+         <li id="align">
+         Creator: <%= @cocktail.creator %>
+         </li>
+         <li id="align">
+         Ingredients: <%= @cocktail.ingredients %>
+         </li>
+         <li id="align">
+         Instructions: <%= @cocktail.instructions %>
+         </li>
+         </ul>
+       </div>
 </div>
 
 
+
 <div class="inside">
-<p>
-Ingredients: <%= @cocktail.ingredients %>
-</p>
+  <h4><%= @cocktail.comments.count %> Comments </h4>
 </div>
 
-
-
 <div class="inside">
-<p>
-Instructions: <%= @cocktail.instructions %>
-</p>
+ <%= render @cocktail.comments %>
 </div>
 
-
 <div class="inside">
-<h2><%= @cocktail.comments.count %> Comments </h2>
-</div>
-<div class="inside">
-<%= render @cocktail.comments %>
-</div>
-<div class="inside">
-<h3>Add Comments: </h3>
+ <h4>Add Comments: </h4>
 <%= render "comments/form" %>
 </div>

@@ -11,7 +11,7 @@
 </head>
 <body>
   <div id="main">
-    <div id="header">
+
 
 <!--
     <div id="logo_text">
@@ -26,33 +26,35 @@
 
            <li><%= link_to "Cocktails", cocktails_path %></li>
 
-           <li><div class="login">
+           <li class="align_right"><div class="login">
             <% if @current_user.present? %>
-            Welcome, <%= @current_user.name %>
-            <% if @current_user.admin %>
-            (admin)
-            <% end %>
-            </li>
-            |
-            <li><%= link_to 'Logout', login_path, method: 'delete' %></li>
+              You are logged in as: <%= @current_user.name %>
+              <% if @current_user.admin %>
+              (admin)
+
+              <% end %>
+              <li><%= link_to "Create a new Cocktail", new_cocktail_path %></li>
+              |
+              <li class="align_right"><%= link_to 'Logout', login_path, method: 'delete' %></li>
             <% else %>
-            <li><%= link_to 'Login', login_path %></li>
-            |
-            <li><%= link_to 'Sign Up', new_user_path %></li>
+              <li class="align_right"><%= link_to 'Login', login_path %></li>
+              |
+              <li class="align_right"><%= link_to 'Sign Up', new_user_path %></li>
             <% end %>
 
 
+          </li>
         </div>
 
         </div>
-      </div>
-      </div>
-      <div id="site_content">
-        <div id="content">
-               <%= yield %>
 
-        </div>
-      </div>
+
+         <%= yield %>
+
+
+
+
+
 
     <footer>
          <div id="footer">

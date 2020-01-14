@@ -1,5 +1,8 @@
-<h2>Create New Account</h2>
-
+<br>
+<br>
+<div class="main_content">
+<h2>Create a New Account</h2>
+<br>
 <!-- could also just use @user.errors.full_messages here -->
 <% if @user.errors.any? %>
     <p>Please correct the following errors:</p>
@@ -33,5 +36,16 @@
     <br>
 
   <%= f.submit 'Sign up' %>
+
+
+
+</div>
+
+
+
+
+
+
+
 
 <% end %>

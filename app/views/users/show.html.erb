@@ -1,5 +1,13 @@
+<br>
+<br>
+<div class="main_content">
+
+
 <h2>Profile Page for <%= @user.name %></h2>
 
 
+ <% if @user.image.present? %>
+  <%= image_tag @user.image, alt: @user.name, class: 'cocktail' %>
+ <% end %>
 
-      <%= image_tag @user.image, alt: @user.name, class: 'cocktail' %>
+</div>

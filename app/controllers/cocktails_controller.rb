@@ -26,8 +26,10 @@ class CocktailsController < ApplicationController
 end
 
   def create
-    @cocktail = Cocktail.new(cocktail_params)
-    if @cocktail.save
+    # @cocktail = Cocktail.new(cocktail_params)
+    # if @cocktail.save
+    @cocktail = @current_user.cocktails.create(cocktail_params)
+    if @cocktail.persisted?
       redirect_to @cocktail, notice: "You created a cocktail"
     else
       render :new, alert: "Your cocktail wasn't created"
