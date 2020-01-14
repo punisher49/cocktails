@@ -26,25 +26,24 @@
 
            <li><%= link_to "Cocktails", cocktails_path %></li>
 
-           <li class="align_right"><div class="login">
+
             <% if @current_user.present? %>
               You are logged in as: <%= @current_user.name %>
               <% if @current_user.admin %>
-              (admin)
-
+              (Admin)
               <% end %>
               <li><%= link_to "Create a new Cocktail", new_cocktail_path %></li>
               |
-              <li class="align_right"><%= link_to 'Logout', login_path, method: 'delete' %></li>
-            <% else %>
-              <li class="align_right"><%= link_to 'Login', login_path %></li>
+              <%# <!-- <li><%= link_to "Profile", user_path %></li> --> %>
               |
-              <li class="align_right"><%= link_to 'Sign Up', new_user_path %></li>
+              <li><%= link_to 'Logout', login_path, method: 'delete' %></li>
+            <% else %>
+              <li><%= link_to 'Login', login_path %></li>
+              |
+              <li><%= link_to 'Sign Up', new_user_path %></li>
             <% end %>
 
 
-          </li>
-        </div>
 
         </div>
 
@@ -59,10 +58,10 @@
     <footer>
          <div id="footer">
             Copyright &copy; Hasan Aliyev 2020
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com/TheCocktailPortal/" target="_blank" class="fa fa-facebook" ></a>
+          <a href="https://twitter.com/createcocktails?lang=en" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/channel/UCu9ArHUJZadlhwt3Jt0tqgA" target="_blank" class="fa fa-youtube"></a>
+          <a href="https://www.instagram.com/bartendersportal/" target="_blank" class="fa fa-instagram"></a>
          </div>
     </footer>
 </body>

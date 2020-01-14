@@ -1,11 +1,11 @@
 <%= form_for([@cocktail,@cocktail.comments.build]) do |f|%>
-  <div class="text_optional">
+  <div>
   <p>
   <%= f.label :name %>
   <%= f.text_field :name %>
   </p>
   </div>
-<div class="text_optional">
+<div>
   <p>
   <%= f.label :body, 'Comment' %> <br>
   <%= f.text_area :body %>

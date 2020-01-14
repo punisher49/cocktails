@@ -1,35 +1,44 @@
 <br>
 <br>
 <div class="main_content">
-<h2>Login</h2>
-
-<br>
-
-
-<% if flash[:error] %>
-  <!-- Print out any error message for the user -->
-  <br>
-  <strong><%= flash[:error] %></strong>
-  <br>
-  <br>
-<% end %>
-
-  <%= form_tag login_path do %>
-  <%= label_tag :email %>
-  <%= email_field_tag :email %>
+  <div id="login">
+    <h2>Login</h2>
+    <br>
+      <% if flash[:error] %>
+      <!-- Print out any error message for the user -->
+        <br>
+        <strong><%= flash[:error] %></strong>
+        <br>
+        <br>
+      <% end %>
 
 
 
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
+        <%= form_tag login_path do %>
 
+          <div class="field">
+          <div>
+            <%= label_tag :email, 'Email'%>
+          </div>
 
+          <%= email_field_tag :email %>
+          </div>
+          <br>
+          <div class="field">
+          <div>
+          <%= label_tag :password, 'Password' %>
+          </div>
+          <%= password_field_tag :password %>
+          </div>
 
-<br>
+        <br>
+        <br>
+        <div class="submit">
+          <%= submit_tag 'Login' %>
+        </div>
+        <% end %>
 
-  <%= submit_tag 'Login' %>
+  </div>
 
-
-<% end %>
 
 </div>

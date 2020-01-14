@@ -1,24 +1,45 @@
-
+<div class="main_content">
+<div id="login">
+<br>
+<h1>Create a New Cocktail</h1>
 <%= simple_form_for(@cocktail) do |f|%>
 
 
 
-
+<div class="field">
+<div>
 <%= f.label :name %>
+</div>
 <%= f.text_field :name %>
-<br>
+</div>
+<div class="field">
+<div>
 <%= f.label :image, 'Image URL' %>
+</div>
 <%= f.text_field :image %>
-<br>
+</div>
+<div class="field">
+<div>
 <%= f.label :creator  %>
+</div>
 <%= f.text_field :creator %>
-<br>
+</div>
+<div class="field">
+<div>
 <%= f.label :ingredients %>
+</div>
 <%= f.text_field :ingredients %>
-<br>
+</div>
+<div class="field">
+<div>
 <%= f.label :instructions %>
+</div>
 <%= f.text_field :instructions %>
-
-<br>
+</div>
+<div class="submit">
 <%= f.submit %>
+</div>
 <% end %>
+
+</div>
+</div>
