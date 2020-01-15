@@ -12,7 +12,7 @@
 
 .image img {
   max-width: 300px;
-  
+
 }
 
 .cocktail {
@@ -28,4 +28,20 @@
   border-radius: 35px;
   box-shadow: 10px 10px 100px 10px orange;
 
+}
+
+.all_cocktails {
+  /* display: grid; */
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 100px;
+
+
+}
+#cocktails_inside{
+  /* box-shadow: 10px 10px 100px 10px orange; */
+  border-radius: 35px;
+  border: 1px solid orange;
+  margin:5px;
+  padding: 10px;
 }

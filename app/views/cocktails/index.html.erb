@@ -1,10 +1,11 @@
 
-<div class="main_content">
+
+<div class="all_cocktails">
 <% @cocktail.each do |cocktail| %>
 
 
 
-
+     <div id="cocktails_inside">
       <%= link_to cocktail.name, cocktail %> (Added by <%= cocktail.user.name %>)<br>
       <%= image_tag cocktail.image, alt: @cocktail.name, class: 'cocktail' %><br>
       <% if @current_user.present? && ( @current_user.admin? || cocktail.user == @current_user ) %>
@@ -13,6 +14,8 @@
       <% if @current_user.present? && ( @current_user.admin? || cocktail.user == @current_user ) %>
         <%= link_to "Delete", delete_cocktail_path(cocktail), method: :delete, data: {confirm: "Are you sure?"} %><br>
       <% end %>
+      </div>
+
 
 
 

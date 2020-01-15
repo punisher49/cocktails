@@ -49,13 +49,6 @@
   width: 80%;
 }
 
- }
- #site_content {
-
- margin-left:260px;
- display: grid;
- grid-template-columns: auto auto;
- }
 
 img{
    border: 1px solid black;
@@ -162,9 +155,4 @@ img{
      background: purple;
      color: white;
      border-radius: 35px;
-   }
-
-   #map_map {
-     width: 700px;
-     height: 700px;
    }
