@@ -1,15 +1,16 @@
-<br>
-<br>
-<div class="main_content">
-  <div id="login">
+
+<div id="login">
+
+
     <h2>Login</h2>
     <br>
+    <div>
       <% if flash[:error] %>
       <!-- Print out any error message for the user -->
         <br>
         <strong><%= flash[:error] %></strong>
         <br>
-        <br>
+
       <% end %>
 
 
@@ -23,7 +24,7 @@
 
           <%= email_field_tag :email %>
           </div>
-          <br>
+
           <div class="field">
           <div>
           <%= label_tag :password, 'Password' %>
@@ -31,14 +32,19 @@
           <%= password_field_tag :password %>
           </div>
 
-        <br>
-        <br>
         <div class="submit">
           <%= submit_tag 'Login' %>
         </div>
         <% end %>
 
-  </div>
+
 
 
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

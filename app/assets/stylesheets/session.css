@@ -1,8 +1,5 @@
 
 
-.field {
-  /* width: 30vw; */
-}
 
 .field input {
   border: 5px solid orange;
@@ -15,13 +12,13 @@
 
    #login{
    width:440px;
-   height:190px;
+   height:
    padding:10px;
    background-color:black;
    color:orange;
    text-align: center;
    font-size: 26px;
-   margin-left: 190px;
+   margin-left: 290px;
  }
 
 

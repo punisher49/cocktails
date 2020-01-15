@@ -1,0 +1,42 @@
+<div class="comments_themselves">
+<%# <%= @cocktail.comments.count %>
+<%= render @cocktail.comments %>
+<br>
+</div>
+<div class="comments_main">
+<%= render "comments/form" %>
+</div>
+
+<div class="main_content">
+<br><br>
+
+        <div id="cocktail_title">
+        <p>
+             <%= @cocktail.name %>
+        </p>
+        </div>
+        <div>
+        <% if @cocktail.image.present?  %>
+        <%= image_tag @cocktail.image, alt: @cocktail.name, class: 'cocktail_inside' %>
+        <% end  %>
+        </div>
+
+  <br>
+       <div class="cre_ing_ins">
+         <ul>
+         <li>
+         Creator: <%= @cocktail.creator %>
+         </li>
+         <br>
+         <li >
+         Ingredients: <%= @cocktail.ingredients %>
+         </li>
+         <br>
+         <li>
+         Instructions: <%= @cocktail.instructions %>
+         </li>
+         </ul>
+       </div>
+
+
+</div>

@@ -1,54 +1,28 @@
-<div class="main_content">
-<br><br>
 
+<%= @cocktail.name %>
 
-
-<div>
-  <div>
-        <p>
-             <%= @cocktail.name %>
-        </p>
-
-
-        <div>
-        <% if @cocktail.image.present?  %>
-        <%= image_tag @cocktail.image, alt: @cocktail.name, class: 'cocktail_inside' %>
-        <% end  %>
-        </div>
+<div class="cocktail_details">
+ <div>
+  <div class="image">
+    <% if @cocktail.image.present?  %>
+    <%= image_tag @cocktail.image, alt: @cocktail.name, class: 'cocktail_inside' %>
+    <% end  %>
   </div>
-  <br>
 
-       <div class="details_of_cocktail">
-         <ul>
-         <li>
-         Creator: <%= @cocktail.creator %>
-         </li>
-         <br>
-         <li >
-         Ingredients: <%= @cocktail.ingredients %>
-         </li>
-         <br>
-         <li>
-         Instructions: <%= @cocktail.instructions %>
-         </li>
+  <div class="instructions">
+    Creator: <%= @cocktail.creator %>
+    <br>
+    Ingredients: <%= @cocktail.ingredients %>
+    <br>
+    Instructions: <%= @cocktail.instructions %>
+  </div>
 
-         </ul>
-       </div>
 </div>
 
+<div class="cocktail_comments">
 
+  <%= render @cocktail.comments %>
 
-<div>
-  <h4><%= @cocktail.comments.count %> Comments </h4>
+  <%= render "comments/form" %>
 </div>
-
-<div>
- <%= render @cocktail.comments %>
-</div>
-
-<div>
- <h4>Add Comments: </h4>
-<%= render "comments/form" %>
-</div>
-
 </div>

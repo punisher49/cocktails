@@ -1,12 +1,17 @@
 class CocktailsController < ApplicationController
+
   before_action :set_cocktail,  only: [:show, :edit, :update, :destroy]
+
     before_action :check_if_logged_in, except: [:index, :show]
+
   def index
     @cocktail = Cocktail.all.order("created_at DESC")
   end
 
   def show
-
+    # puts "==============================="
+    #
+    # @cocktail.comments.each { |c| p c }
   end
 
   def new

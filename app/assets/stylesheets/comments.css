@@ -1,0 +1,35 @@
+.comment_form {
+  padding-bottom: 20px;
+}
+
+
+.comments_main{
+
+  margin-top: 50px;
+  float: left;
+
+}
+
+
+.comments_themselves {
+  float:right;
+  width: 100px;
+  border: 1px ridge orange;
+}
+
+.submit_comment input {
+  background-color: orange;
+  border: none;
+  color: black;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 80px;
+  margin:-100px;
+  margin-left: 20px;
+
+ }

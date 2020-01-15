@@ -6,8 +6,9 @@ post '/login' => 'session#create'
 delete '/login' => 'session#destroy'
 
 resources :users
+
 resources :cocktails do
-resources :comments
+  resources :comments
 end
 
 delete 'cocktails/:id', to: "cocktails#delete", as: :delete_cocktail
