@@ -1,0 +1,62 @@
+<h1>Cocktails Map</h1>
+<p>Find me in app/views/cocktails/map.html.erb</p>
+
+<style>
+
+
+
+  #map{
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+  html, body {
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+  }
+
+</style>
+<div id="map">
+
+</div>
+<script>
+      const cocktails = <%= @cocktails.to_json.html_safe %>
+
+      function initMap() {
+
+        // var myLatLng = {lat: -25.363, lng: 131.044};
+        var bounds = new google.maps.LatLngBounds();
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          // zoom: 8,
+          // center: {lat: cocktails[0].latitude, lng: cocktails[0].longitude}
+        });
+        for (var i = 0; i < cocktails.length; i++) {
+          const cocktail = cocktails[i]
+          var marker = new google.maps.Marker({
+            position: {lat: cocktail.latitude, lng: cocktail.longitude},
+            map: map,
+            title: cocktail.name
+          });
+          //add the latest marker to the bounding box
+        bounds.extend(marker.position)
+      } //for
+     map.fitBounds( bounds )//make the map fit within the box containing
+    }//initMap
+</script>
+<div id="map_map">
+
+<script async defer
+
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnrWs3SRGJ-lJ6tb4NTAj1118mGtjPcWQ&callback=initMap">
+</script>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

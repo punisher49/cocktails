@@ -110,7 +110,7 @@ img{
    border: 1px ridge orange;
    border-radius: 35px;
    /* box-shadow: 0px 0 100px 10px orange; */
-   
+
 
 }
 
@@ -162,4 +162,9 @@ img{
      background: purple;
      color: white;
      border-radius: 35px;
+   }
+
+   #map_map {
+     width: 700px;
+     height: 700px;
    }
