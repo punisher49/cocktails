@@ -18,3 +18,13 @@
     width:170px;
     height: 200px;
   }
+#cocktail_title {
+  font-size: 50px;
+  margin-right: 270px;
+}
+.instructions {
+  border: 1px ridge orange;
+  border-radius: 35px;
+  box-shadow: 10px 10px 100px 10px orange;
+
+}
