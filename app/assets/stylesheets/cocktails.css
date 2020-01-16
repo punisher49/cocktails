@@ -42,7 +42,7 @@
 
 }
 #cocktails_inside{
-  border-radius: 35px;
+  border-radius: 85px;
   border: 1px solid orange;
   padding: 10px;
 }
@@ -62,6 +62,8 @@
 
   margin:5px;
   padding: 10px;
+  border-radius: 85px;
+  border: 1px solid orange;
 }
 #cocktail_name_main_page{
 
