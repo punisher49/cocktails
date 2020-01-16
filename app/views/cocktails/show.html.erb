@@ -17,9 +17,13 @@
     Creator: <%= @cocktail.creator %>
     </h3>
     <br>
+    <br>
+    <br>
     <h3>
     Ingredients: <%= @cocktail.ingredients %>
     </h3>
+    <br>
+    <br>
     <br>
     <h3>
     Instructions: <%= @cocktail.instructions %>
@@ -30,6 +34,9 @@
 
 <div id="cocktail_comments">
 <div id="comments">
+  <h1>Comments</h1>
+  <br>
+  <br>
   <%= render @cocktail.comments %>
 </div>
   <%= render "comments/form" %>

@@ -28,8 +28,7 @@
 
 }
 .instructions {
-  border: 1px ridge orange;
-  border-radius: 35px;
+
   height: 302px;
   padding: 10px;
 }
@@ -49,14 +48,18 @@
 }
 
 #cocktail_comments{
-  margin-left: 420px;
-  margin:5px;
-  padding: 10px;
+
+  width:440px;
+  padding:10px;
+  background-color:black;
+  color:orange;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 290px;
 
 }
 #comments{
-  border-radius: 35px;
-  border: 1px solid orange;
+
   margin:5px;
   padding: 10px;
 }
