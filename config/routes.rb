@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+root :to => "session#new"  
+
 
   get 'cocktails/map'
   get 'pages/map'
