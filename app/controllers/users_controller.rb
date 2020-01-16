@@ -56,7 +56,7 @@ class UsersController < ApplicationController
   end
 
   def update
-
+    @user = User.find params[:id]
     if @user.update(user_params)
       redirect_to @user, notice: "Your profile has been updated"
     else
