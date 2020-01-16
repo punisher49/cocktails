@@ -2,6 +2,7 @@
 
 
 <h3>Name:  <%= comment.name %></h3>
+<br>
 <h3>Comment:  <%= comment.body %></h3><br>
 <p><%= time_ago_in_words(comment.created_at) %></p>
 <p><%= link_to 'Delete',[comment.cocktail,comment], method: :delete, data: {confirm: 'Are you sure?'}  %></p>
