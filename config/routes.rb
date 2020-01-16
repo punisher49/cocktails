@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
-root :to => "session#new"  
+root :to => "cocktails#index"
 
 
-  get 'cocktails/map'
-  get 'pages/map'
+get 'cocktails/map'
+get 'pages/map'
 get '/login' => 'session#new'
 post '/login' => 'session#create'
 delete '/login' => 'session#destroy'

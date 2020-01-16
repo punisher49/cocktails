@@ -15,8 +15,8 @@
 }
 
 .cocktail {
-    width:170px;
-    height: 200px;
+    width:330px;
+    height: 400px;
   }
 #cocktail_title {
   font-size: 60px;
@@ -36,14 +36,14 @@
 .all_cocktails {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 100px;
+  margin-left: 20px;
+
 
 
 }
 #cocktails_inside{
   border-radius: 35px;
   border: 1px solid orange;
-  margin:5px;
   padding: 10px;
 }
 
@@ -62,4 +62,9 @@
 
   margin:5px;
   padding: 10px;
+}
+#cocktail_name_main_page{
+
+  text-align: center;
+
 }
