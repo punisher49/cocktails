@@ -1,19 +1,17 @@
 
 .cocktail_details {
-  /* border: 2px solid green; */
+
 }
 
 .image, .instructions {
   display: inline-block;
   width: 48%;
-  /* border: 1px solid orange; */
   vertical-align: top;
 }
 
 .image img {
   max-width: 500px;
   margin-left: 20px;
-
 }
 
 .cocktail {
@@ -23,8 +21,8 @@
 #cocktail_title {
   font-size: 60px;
   text-transform: uppercase;
-  padding:10px;
-  color:orange;
+  padding: 10px;
+  color: orange;
   text-align: center;
   margin-left: 0px;
 
@@ -34,12 +32,9 @@
   border-radius: 35px;
   height: 302px;
   padding: 10px;
-
-
 }
 
 .all_cocktails {
-  /* display: grid; */
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-left: 100px;
@@ -47,7 +42,6 @@
 
 }
 #cocktails_inside{
-  /* box-shadow: 10px 10px 100px 10px orange; */
   border-radius: 35px;
   border: 1px solid orange;
   margin:5px;

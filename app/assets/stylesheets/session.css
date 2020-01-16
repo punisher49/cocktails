@@ -3,16 +3,13 @@
 
 .field input {
   border: 5px solid orange;
-
-      padding: 7px;
-
-      margin: 0 0 10px 0;
+  padding: 7px;
+  margin: 0 0 10px 0;
   width:200px;
 }
 
    #login{
    width:440px;
-   height:
    padding:10px;
    background-color:black;
    color:orange;
@@ -36,5 +33,4 @@
   cursor: pointer;
   border-radius: 80px;
   margin:-100px;
-
  }
