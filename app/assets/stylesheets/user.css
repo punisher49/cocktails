@@ -1,0 +1,11 @@
+#profile_page {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding:10px;
+  color:orange;
+  text-align: center;
+  margin-left: 0px;
+}
+#edit_profile {
+  margin-left: 30px;
+}

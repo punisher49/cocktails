@@ -13,19 +13,25 @@
   </div>
 
   <div class="instructions">
+    <h3>
     Creator: <%= @cocktail.creator %>
+    </h3>
     <br>
+    <h3>
     Ingredients: <%= @cocktail.ingredients %>
+    </h3>
     <br>
+    <h3>
     Instructions: <%= @cocktail.instructions %>
+    </h3>
   </div>
 
 </div>
 
-<div class="cocktail_comments">
-
+<div id="cocktail_comments">
+<div id="comments">
   <%= render @cocktail.comments %>
-
+</div>
   <%= render "comments/form" %>
 </div>
 </div>

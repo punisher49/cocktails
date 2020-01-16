@@ -1,13 +1,16 @@
-<br>
-<br>
 
-
-<h2>Profile Page for <%= @user.name %></h2>
+<div id="profile_page">
+<h2>Profile<%# @user.name %></h2>
+</div>
+<div id="edit_profile">
+<h4><%= link_to "Edit Profile", edit_user_path %></h4>
+</div>
 
 
  <% if @user.image.present? %>
   <%= image_tag @user.image, alt: @user.name, class: 'cocktail' %>
  <% end %>
+
 <br>
 <br>
 <br>

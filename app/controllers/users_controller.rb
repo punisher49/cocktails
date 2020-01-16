@@ -47,11 +47,27 @@ class UsersController < ApplicationController
     @user = User.find params[:id]
   end
 
+################################################
+
+
+  #??
   def edit
+   @user = User.find params[:id]
   end
 
   def update
+
+    if @user.update(user_params)
+      redirect_to @user, notice: "Your profile has been updated"
+    else
+      render :edit, alert: "Your profile wasn't successfully updated"
+    end
   end
+
+################################################
+
+
+
 
   def destroy
   end
