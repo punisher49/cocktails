@@ -47,10 +47,6 @@ class UsersController < ApplicationController
     @user = User.find params[:id]
   end
 
-################################################
-
-
-  #??
   def edit
    @user = User.find params[:id]
   end
@@ -63,10 +59,6 @@ class UsersController < ApplicationController
       render :edit, alert: "Your profile wasn't successfully updated"
     end
   end
-
-################################################
-
-
 
 
   def destroy

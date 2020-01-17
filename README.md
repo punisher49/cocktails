@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Background
 
-Things you may want to cover:
+This is a Ruby on Rails application (version 2.4.1). It is about cocktails, where users can sign up to create a cocktail to share their favourite cocktails.
 
-* Ruby version
+It can be accessed here: https://cocktails-ruby-project.herokuapp.com
 
-* System dependencies
+## Main Features
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Getting cocktail recipes and instructions
